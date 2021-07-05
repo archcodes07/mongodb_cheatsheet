@@ -1,0 +1,12 @@
+DB Level commands:
+
+1. show dbs - shows all databases
+2. use <db-name> - creates new db and switches to that db
+3. db - shows the db you are in
+4. db.dropDatabase() - delete a database
+
+Collection level commands 
+
+1. show collections - shows the collection names in a db
+2. db.createCollection() - creates a new collection
+3. db.<collection-name>.drop() - deletes a collection
