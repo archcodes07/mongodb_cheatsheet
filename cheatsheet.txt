@@ -10,3 +10,29 @@ Collection level commands
 1. show collections - shows the collection names in a db
 2. db.createCollection() - creates a new collection
 3. db.<collection-name>.drop() - deletes a collection
+
+Document level commands
+
+1. db.<collection-name>.find() - shows all documents in a collection
+2. db.<collection-name>.find().pretty() - shows documents in a pretty way
+3. db.<collection-name>.find().pretty().limit(2) - will show 2 documents
+4. .count() - will output the count
+5. .sort({}) - will sort the output based on the argument
+6. db.<collection-name>.insert({member_since:1}) - insert a document in a collection
+7. db.<collection-name>.insertMany({}) - insert many documents in a collection 
+
+Search a certain document in a certain collection
+
+1. db.<collection-name>.find({"lang": "Java"})
+2. db.<collection-name>.findOne({"lang": "Java"}) - will output a first document  
+
+Update the documents:
+
+1. db.<collection-name>.update({name: "Harry"}, {
+    name: "Harry",
+    member_since: 7
+}, {upsert: true})
+
+Delete a document
+
+1. db.comments.remove({insert object}) 
